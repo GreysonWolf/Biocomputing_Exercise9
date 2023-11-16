@@ -17,3 +17,10 @@ ggplot(data, aes(x=region, y=observations)) + stat_summary(fun.y = mean, geom = 
 #Question 2a: graph of means using the stat_summary function
 ggplot(data, aes(x=region, y=observations)) + geom_point() + geom_jitter() + xlab("Region") + ylab("Observation values") + ggtitle("Scatterplot of all observations")
 #Question 2b: graph of all data points using geom_point
+
+#The barplot, using the stat_summary function, clearly shows us the means of each region.
+#Meanwhile, the scatterplot shows the spread of the data, but there's a lot of points and it's difficult to read.
+#A density plot and/or violin plot would be good at showing the most common values AND the spread...
+
+#Density plot
+ggplot(data, aes(x=observations, color=region)) + geom_density()
