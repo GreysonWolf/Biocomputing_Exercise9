@@ -13,4 +13,4 @@ ggplot(data=temps, aes(x=Latitude, y=AvgHigh)) + geom_point() + xlab("Latitude (
 #Question 2
 data <- read.table("data.txt", header=TRUE, sep=",", stringsAsFactors=FALSE)
 #loads the "data.txt" file into R, where it is stored as a data frame
-ggplot(data, aes(x=region, y=observations)) + stat_summary(fun.y = mean, geom = "bar") 
+ggplot(data, aes(x=region, y=observations)) + stat_summary(fun.y = mean, geom = "bar") + xlab("Region") + ylab("Observation values") + ggtitle("Mean observations by region")
