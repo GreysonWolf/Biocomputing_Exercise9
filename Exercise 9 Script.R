@@ -23,4 +23,4 @@ ggplot(data, aes(x=region, y=observations)) + geom_point() + geom_jitter() + xla
 #A density plot and/or violin plot would be good at showing the most common values AND the spread...
 
 #Density plot
-ggplot(data, aes(x=observations, color=region)) + geom_density()
+ggplot(data, aes(x=observations, color=region)) + geom_density() + xlab("Observation value") + ylab("Proportion of total") + ggtitle("Density plot of observation values")
