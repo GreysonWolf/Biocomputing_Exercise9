@@ -30,4 +30,4 @@ scatterplot <- ggplot(data, aes(x=Group, y=Value)) +
   geom_jitter(width=0.3, height=0) + 
   labs(title="Scatter Plot of Observations", x="Group", y="Value")
 
-#
+#the difference between the two plotting methods was that with the scatter point, we could see a trend wall with the bar graph we were able to see the frequency.
