@@ -1,0 +1,33 @@
+#Q1
+#First you have to load into ggplot
+library(ggplot2)
+
+#Prepare data for plot
+data <- read.table("CamryData.txt")
+
+#Plot the data with classic and lab changes
+ggplot(data, aes(x=V1, y=V3)) +
+     geom_point() +
+     geom_smooth(method="lm", se=FALSE) +
+     theme_classic() +
+     xlab("Year") + ylab("MPG")
+
+#Q2
+#First you have to load into ggplot
+library(ggplot2
+
+#Prepare data for plot
+data <- read.table("data.txt")
+
+#Prepare Bar graph
+means <- aggregate(Value ~ Group, data=data, FUN=mean)
+barplot <- ggplot(means, aes(x=Group, y=Value)) +
+  geom_bar(stat="identity", fill="skyblue") +
+  labs(title="Means of Four Populations", x="Group", y="Mean Value")
+
+#Prepare Scatter plot of all observations with jitter
+scatterplot <- ggplot(data, aes(x=Group, y=Value)) +
+  geom_jitter(width=0.3, height=0) + 
+  labs(title="Scatter Plot of Observations", x="Group", y="Value")
+
+#the difference between the two plotting methods was that with the scatter point, we could see a trend wall with the bar graph we were able to see the frequency.
