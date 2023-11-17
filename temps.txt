@@ -1,0 +1,29 @@
+City, Latitude, AvgHigh
+Puerto Vallarta, 20, 81
+Miami, 26, 80
+Houston, 30, 73
+Mobile, 31, 71
+Los Angeles, 34, 70
+Atlanta, 34, 62
+Dallas, 33, 69
+Nashville, 36, 62
+Virginia Beach, 37, 59
+St. Louis, 39, 57
+Denver, 40, 55
+San Francisco, 38, 61
+Washington D.C, 39, 56
+South Bend, 42, 47
+New York City, 41, 50
+Milwaukee, 43, 43
+Minneapolis, 45, 42
+Seattle, 48, 53
+Boston, 42, 46
+Fargo, 47, 36
+Toronto, 44, 41
+Edmonton, 54, 35
+Juneau, 58, 33
+Anchorage, 61, 33
+Fairbanks, 65, 25
+Barrow, 72, -7
+
+
